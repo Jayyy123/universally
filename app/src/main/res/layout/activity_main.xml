@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".presentation.ui.activities.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/black">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fabAlignmentMode="center"
+                android:backgroundTint="@color/black">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bnv"
+                    android:background="@color/black"
+                    app:itemIconTint="@color/white"
+                    app:itemIconSize="45dp"
+                    app:itemRippleColor="@color/icon_blue"
+                    app:itemPaddingTop="15dp"
+                    android:backgroundTintMode="add"
+                    app:itemActiveIndicatorStyle="@color/purple_500"
+                    app:menu="@menu/bottom_menu"
+                    android:layout_marginEnd="16dp"/>
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab"
+                app:layout_anchor="@id/bab"
+                android:layout_marginTop="12dp"
+                app:fabCustomSize="45dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_add_foreground"
+                app:maxImageSize="50dp"/>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

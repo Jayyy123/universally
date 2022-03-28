@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_foreground"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_foreground"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/about"
+        android:icon="@drawable/ic_about_foreground"
+        app:showAsAction="always"
+        android:id="@+id/about"/>
+
+    <item
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_foreground"
+        app:showAsAction="always"
+        android:id="@+id/settings"/>
+
+    <item
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout_foreground"
+        app:showAsAction="always"
+        android:id="@+id/logout"/>
+
+</menu>

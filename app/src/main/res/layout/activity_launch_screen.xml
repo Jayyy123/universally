@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".presentation.ui.activities.LaunchScreen">
+
+
+    <ImageView
+        android:id="@+id/universally_launch"
+        android:layout_width="411dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/uinversally_launch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montbold"
+        android:text="@string/explore_the_universe"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/universally_launch" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/mont"
+        android:text="@string/learn_more_about_the"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etu" />
+
+    <TextView
+        android:id="@+id/es"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/universe_where_we_all_live"
+        android:textColor="@color/white"
+        android:fontFamily="@font/mont"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="76dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_play_foreground"
+        app:fabCustomSize="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="60dp" />
+
+    <ImageView
+        android:id="@+id/arr"
+        android:layout_width="165dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_round_undo_24"
+        android:backgroundTint="@color/icon_blue"
+        android:foregroundTint="@color/icon_blue"
+        android:rotationX="1280"
+        android:rotationY="297"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:id="@+id/blank"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/plane"
+            android:layout_width="119dp"
+            android:layout_height="125dp"
+
+            android:background="@drawable/ic_plane_foreground"
+            android:backgroundTint="@color/icon_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/animla"
+            android:layout_width="409dp"
+            android:layout_height="1000dp"
+            android:background="@drawable/smoke"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

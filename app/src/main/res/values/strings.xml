@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Universally</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="explore_the_universe">Explore the Universe!</string>
+    <string name="learn_more_about_the">Learn more about the</string>
+    <string name="universe_where_we_all_live">universe where we all live.</string>
+</resources>
