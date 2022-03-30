@@ -7,4 +7,4 @@ import android.view.View
 import android.view.ViewGroup
 import com.jay.universally.R
 
-class SearchFragment : Fragment(R.layout.fragment_search)
+class About : Fragment(R.layout.fragment_about)

@@ -15,6 +15,13 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="font" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+        <item name="fontFamily"> @font/mont </item>
+        <item name="android:textSize">50sp</item>
+
+    </style>
 
     <style name="Launch" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 

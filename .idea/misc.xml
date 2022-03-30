@@ -10,14 +10,18 @@
         <entry key="app/src/main/res/drawable/ic_se_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_search_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_search_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/textbutton.xml" value="0.108" />
+        <entry key="app/src/main/res/drawable/textbuttonw.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/view.xml" value="0.133" />
         <entry key="app/src/main/res/font-v26/montserrat.xml" value="0.2462962962962963" />
         <entry key="app/src/main/res/font/montserrat.xml" value="0.2462962962962963" />
+        <entry key="app/src/main/res/layout/activity_app.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16927899686520376" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/side_menu.xml" value="0.3098958333333333" />
       </map>

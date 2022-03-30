@@ -38,7 +38,8 @@ class LaunchScreen : AppCompatActivity() {
 
             handler.postDelayed({
                 handler.postDelayed({
-                    startActivity(Intent(this,MainActivity::class.java))
+                    startActivity(Intent(this,App::class.java))
+                    finish()
                 },100)
             },2300)
 

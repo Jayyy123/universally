@@ -1,14 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
     tools:context=".presentation.ui.fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <HorizontalScrollView
+        android:id="@+id/sections"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
 
-</FrameLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/section"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingVertical="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="19sp"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/textbuttonw"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"
+                    android:focusable="true" />
+                <TextView
+                    android:id="@+id/aa"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="19sp"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textbutton"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Planets"
+                    android:textSize="19sp"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textbuttonw"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+                <TextView
+                    android:id="@+id/bb"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Planets"
+                    android:textSize="19sp"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textbutton"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+
+                <TextView
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solar System"
+                    android:textSize="19sp"
+                    android:paddingHorizontal="10dp"
+                    android:clickable="true"
+                    android:paddingVertical="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textbuttonw"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+                <TextView
+                    android:id="@+id/cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solar System"
+                    android:textSize="19sp"
+                    android:paddingHorizontal="10dp"
+                    android:clickable="true"
+                    android:paddingVertical="10dp"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textbutton"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+
+                <TextView
+                    android:id="@+id/d"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Comets"
+                    android:textSize="19sp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:background="@drawable/textbuttonw"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+                <TextView
+                    android:id="@+id/dd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Comets"
+                    android:textSize="19sp"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:background="@drawable/textbutton"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+
+                <TextView
+                    android:id="@+id/e"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Latest"
+                    android:textSize="19sp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:background="@drawable/textbuttonw"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+                <TextView
+                    android:id="@+id/ee"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Latest"
+                    android:textSize="19sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:background="@drawable/textbutton"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+                <TextView
+                    android:id="@+id/f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Satelite Imaging"
+                    android:textSize="19sp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textbuttonw"
+                    android:textColor="@color/white"
+                    android:clickable="true"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+                <TextView
+                    android:id="@+id/ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Satelite Imaging"
+                    android:textSize="19sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/textbutton"
+                    android:textColor="@color/black"
+                    android:clickable="true"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montbold"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:id="@+id/section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/section_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sections"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/section_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/section"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sections"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

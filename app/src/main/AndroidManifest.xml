@@ -12,11 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Universally">
         <activity
+            android:name=".presentation.ui.activities.App"
+            android:exported="false" />
+        <activity
             android:name=".presentation.ui.activities.AuthActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.ui.activities.LaunchScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".presentation.ui.activities.MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/homeFragment"
         android:title="@string/home"
         app:showAsAction="always"
         android:icon="@drawable/ic_home1_foreground"/>
@@ -19,7 +19,7 @@
     <item
         android:icon="@drawable/ic_search_foreground"
         android:title="@string/search"
-        android:id="@+id/search"
+        android:id="@+id/searchFragment"
         app:showAsAction="always"/>
 
 
