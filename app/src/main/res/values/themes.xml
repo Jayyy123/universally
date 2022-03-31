@@ -13,6 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 
         <!-- Customize your theme here. -->
+        <item name="drawerArrowStyle">@style/hamburger</item>
     </style>
 
     <style name="font" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -43,6 +44,11 @@
         <item name="colorPrimary">@color/white</item>
 
 
+    </style>
+
+    <style name="hamburger" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
     </style>
 
 </resources>

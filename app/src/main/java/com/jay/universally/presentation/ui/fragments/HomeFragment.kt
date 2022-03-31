@@ -1,17 +1,22 @@
 package com.jay.universally.presentation.ui.fragments
 
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.annotation.RequiresApi
+import com.bumptech.glide.Glide
 import com.jay.universally.R
 import com.jay.universally.databinding.FragmentHomeBinding
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 
 class HomeFragment : Fragment(R.layout.fragment_home){
-    private lateinit var binding:FragmentHomeBinding
+    private lateinit var binding: FragmentHomeBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentHomeBinding.bind(view)
@@ -62,6 +67,8 @@ class HomeFragment : Fragment(R.layout.fragment_home){
             }
         }
 
+        Glide.with(this).asGif().load(R.drawable.a).into(binding.iv);
+
     }
 
     private fun reset(first:TextView,second:TextView){
@@ -82,5 +89,13 @@ class HomeFragment : Fragment(R.layout.fragment_home){
         }
         first.visibility = View.GONE
         second.visibility = View.VISIBLE
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun dateAndtime(): String? {
+        val current = LocalDateTime.now()
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
+        val formatted = current.format(formatter)
+        return formatted
     }
 }
